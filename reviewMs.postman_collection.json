@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "2460522b-c268-4d31-a27d-fe0d8e39204b",
+		"name": "reviewMs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40731779"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8083/reviews?companyId=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/reviews?companyId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"reviews"
+					],
+					"query": [
+						{
+							"key": "companyId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/reviews/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8083/reviews/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/reviews?companyId=1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \" Software\",\n    \"description\": \" Java\",\n    \"rating\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/reviews?companyId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"reviews"
+					],
+					"query": [
+						{
+							"key": "companyId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/reviews/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Update Review\",\n    \"description\": \"Update Review \",\n    \"rating\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8083/reviews/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/reviews/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8083/reviews/1"
+			},
+			"response": []
+		}
+	]
+}
