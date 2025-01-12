@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "d9509371-58e1-43b9-a32a-cee8e718b834",
+		"name": "jobMs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40731779"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8082/jobs/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/jobs/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8082/jobs"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/jobs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n       \n        \"title\": \" Software\",\n        \"description\": \" Java\",\n        \"minSalary\": 2000,\n        \"maxSalary\": 5000,\n        \"location\": \"new Delhi\",\n        \"company_id\":1\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8082/jobs"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/jobs/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": 1,\n        \"title\": \"Updated Software\",\n        \"description\": \"Updated Java\",\n        \"minSalary\": 2000,\n        \"maxSalary\": 5000,\n        \"location\": \"new Delhi\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8082/jobs/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/jobs/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8082/jobs"
+			},
+			"response": []
+		}
+	]
+}
